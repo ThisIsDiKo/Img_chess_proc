@@ -3,10 +3,10 @@ from PIL import Image
 import numpy
 from dxfwrite import DXFEngine as dxf
 
-filepath = 'loco3.png'
-width_mm = 900
-height_mm = 900
-screw_mm = 8
+filepath = 'galstuk_off_4.bmp'
+width_mm = 890
+height_mm = 890
+screw_mm = 8.7
 hole_diam_mm = 2
 
 w = int(width_mm / screw_mm)
@@ -58,10 +58,10 @@ img1.show()
 #img1.save('bbb.jpg')
 
 drawing = dxf.drawing(filepath + '.dxf')
-drawing.add(dxf.line((0, 0), (0, -height_mm)))
-drawing.add(dxf.line((0, 0), (width_mm, 0)))
-drawing.add(dxf.line((width_mm, -height_mm), (0, -height_mm)))
-drawing.add(dxf.line((width_mm, -height_mm), (width_mm, 0)))
+#drawing.add(dxf.line((0, 0), (0, -height_mm)))
+#drawing.add(dxf.line((0, 0), (width_mm, 0)))
+#drawing.add(dxf.line((width_mm, -height_mm), (0, -height_mm)))
+#drawing.add(dxf.line((width_mm, -height_mm), (width_mm, 0)))
 
 for i in range(len(new_array)):
     if i % 2 == 0:
