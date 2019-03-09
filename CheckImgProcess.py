@@ -30,7 +30,7 @@ class ImgProcessMainWindow(QMainWindow):
 
         self.thresholdLbl = QLabel("Порог заполнениял")
         self.thresholdCBox = QComboBox()
-        self.thresholdCBox.addItems(["50 %", "60 %", "70 %", "80 %", "90 %", "0 %"])
+        self.thresholdCBox.addItems(["95 %", "50 %", "55 %", "60 %", "65 %", "70 %", "75 %", "80 %", "90 %", "0 %"])
 
         self.startBtn = QPushButton("Старт")
         self.startBtn.clicked.connect(self.start_clicked)
