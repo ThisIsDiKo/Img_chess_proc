@@ -15,6 +15,8 @@ class ImgProcessMainWindow(QMainWindow):
         self.imgNameLbl = QLabel("Название файла")
 
         self.diaScrewLbl = QLabel("Диаметр шляпки")
+
+
         self.diaScrewTxt = QLineEdit("8.7")
         self.diaScrewMmLbl = QLabel("мм")
 
